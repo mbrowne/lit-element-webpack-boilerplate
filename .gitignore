@@ -1,0 +1,9 @@
+*.log
+.DS_Store
+.sonarlint
+dist
+node_modules
+
+# using yarn (at least for now) so ignoring other package managers
+package-lock.json
+shrinkwrap.yaml
