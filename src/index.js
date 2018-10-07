@@ -13,6 +13,7 @@ async function bootstrap() {
         await import(/* webpackChunkName: 'webcomponents' */ '@webcomponents/webcomponentsjs/webcomponents-bundle')
     }
     import('./MyElement')
+    import('./MyCounter')
 }
 
 bootstrap()

@@ -1,26 +1,21 @@
-import { LitElement, html, property } from '@polymer/lit-element'
+// import { LitElement, html, property } from '@polymer/lit-element'
+import { LitElement, html } from '@polymer/lit-element'
+import { property } from './decorators'
 
 class MyElement extends LitElement {
     @property()
     mood = 'happy'
-
-    // static get properties() {
-    //   return {
-    //     mood: {type: String}
-    //   };
-    // }
 
     handleButtonClick() {
         console.log('button clicked!')
     }
 
     render() {
-        console.log('render()')
         return html`<style> .mood { color: green; } </style>
+      Web Components are <span class="mood">${this.mood}</span>!<br>
       <button @click=${e => {
           this.handleButtonClick()
-      }}>click me</button>
-      Web Components are <span class="mood">${this.mood}</span>!`
+      }}>click me</button>`
     }
 }
 
