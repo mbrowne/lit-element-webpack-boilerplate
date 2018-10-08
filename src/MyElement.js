@@ -6,16 +6,9 @@ class MyElement extends LitElement {
     @property()
     mood = 'happy'
 
-    handleButtonClick() {
-        console.log('button clicked!')
-    }
-
     render() {
         return html`<style> .mood { color: green; } </style>
-      Web Components are <span class="mood">${this.mood}</span>!<br>
-      <button @click=${e => {
-          this.handleButtonClick()
-      }}>click me</button>`
+            Web Components are <span class="mood">${this.mood}</span>!`
     }
 }
 
