@@ -15,3 +15,24 @@ export function property(options) {
         }
     }
 }
+
+// finisher(clazz) {
+//     const proto = clazz.prototype
+//     const tmp = { prototype: proto }
+//     if (!proto._classProperties) {
+//         UpdatingElement.createProperty.call(tmp, name, options)
+//         proto._classProperties = tmp._classProperties
+//     }
+//     proto._classProperties.set(name, options)
+// }
+
+// export function property(options) {
+//     return elementDescriptor => ({
+//         ...elementDescriptor,
+//         // TEMP WORKAROUND - rename instance field
+//         key: '__' + elementDescriptor.key,
+//         finisher(clazz) {
+//             clazz.createProperty(elementDescriptor.key, options)
+//         }
+//     })
+// }
